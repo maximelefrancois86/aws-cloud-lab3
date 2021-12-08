@@ -85,6 +85,9 @@ public class EC2Worker {
             //we receive messages every minute
             if (timer-lastRecordedTime>60000){
                 List<Message> messages=receiveMessages(sqsClient,inbox);
+
+
+
                 lastRecordedTime=timer;
                 if ( messages!=null){
                     try {
