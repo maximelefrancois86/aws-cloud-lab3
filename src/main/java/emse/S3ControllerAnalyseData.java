@@ -14,7 +14,7 @@ public class S3ControllerAnalyseData {
             int min = 1000000000;
             int sum = 0;
 
-            try {
+            /*try {
                 File file = new File(csvFile);
                 FileReader fr = new FileReader(file);
                 BufferedReader br = new BufferedReader(fr);
@@ -54,6 +54,17 @@ public class S3ControllerAnalyseData {
 
             } catch(IOException ioe) {
                 ioe.printStackTrace();
+            }*/
+            // Write the data to a local file
+            File myFile = new File("data.txt");
+            try {
+                FileWriter myWriter = new FileWriter("filename.txt");
+                myWriter.write("DATA \n"+"\nmax value: "+max+"\nminvalue: "+min);
+                myWriter.close();
+                System.out.println("Successfully wrote to the file.");
+            } catch (IOException e) {
+                System.out.println("An error occurred.");
+                e.printStackTrace();
             }
         }
         public static void main(String[] args) {

@@ -1,0 +1,4 @@
+DATA 
+
+max value: 0
+minvalue: 1000000000

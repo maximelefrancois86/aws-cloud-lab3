@@ -89,7 +89,7 @@ public class EC2Worker {
 
 
                 lastRecordedTime=timer;
-                if ( messages.size()>0){
+                if ( messages.size()==2){
                     System.out.println("a message has been receved");
                     try {
                         //extracting the bucket name
@@ -103,7 +103,7 @@ public class EC2Worker {
                         //Getting the cvs file
                         S3ControllerGetObject.main(new String[]{bucket,fileName,"ec2sales.csv"});
                         //Anaylizing the csv file
-                        S3ControllerAnalyseData.main(new String[]{fileName});
+                        S3ControllerAnalyseData.main(new String[]{"ec2sales.csv"});
                         deleteMessages(sqsClient,inbox,messages);
                         System.out.println("\n" + "Writing the file into a bucket in the Amazon S3");
                         S3ControllerPutObject.main(new String[]{bucket, fileName, "ec2sales.csv"});
