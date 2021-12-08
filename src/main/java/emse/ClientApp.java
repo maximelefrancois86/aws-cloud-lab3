@@ -56,12 +56,16 @@ public class ClientApp {
 
 
             boolean running = true;
-
+            Long lastRecordedTime=System.currentTimeMillis();
             while (running) {
+                //we check if we receive a message every minute
+                Long timer=System.currentTimeMillis();
+                if (timer-lastRecordedTime>60000){
+                    List<Message> messages = SQSRetrieveMessage.retrieveMessages(sqsClient,queueURl + "INBOX","INBOX");
+                }
 
-                int times = 0;
 
-                List<Message> messages = SQSRetrieveMessage.retrieveMessages(sqsClient,queueURl + "INBOX","INBOX");
+
 
             }
 
