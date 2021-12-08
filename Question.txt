@@ -2,3 +2,8 @@ Question 1: What type of queues can you create? State their differences.
 
 Question 2: In which situations is a Web-Queue-Worker architecture relevant?
 
+According to the Windows Azure documentation, this architecture is relevant for the following cases:
+    -Applications with a relatively simple domain.
+    -Applications with some long-running workflows or batch operations.
+    -When you want to use managed services, rather than infrastructure as a service (IaaS)
+
