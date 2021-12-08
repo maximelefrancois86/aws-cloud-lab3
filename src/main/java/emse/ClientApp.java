@@ -18,6 +18,7 @@ public class ClientApp {
             String filePathString = "C:\\Users\\caill\\Desktop\\Cours Mines\\Majeure\\cours 2a info\\Cloud\\sales-2021-01-02.csv";
             String nameFile = "sales-2021-01-02.csv";
             String queueURl ="https://sqs.us-west-2.amazonaws.com/528939267914/";
+            String pathForCopyObject = "C:\\Users\\caill\\Desktop\\Cours Mines\\Majeure\\cours 2a info\\Cloud\\ResultatEC2";
 
             // Create a bucket for the Web-Queue-Worker architecture
 
@@ -66,12 +67,9 @@ public class ClientApp {
                     // Delete the message
                     SQSDeleteMessage.deleteMessages(sqsClient, queueURl,messages);
 
+                    S3ControllerGetObject.main( new String[]{ nameBucket, nameFile, pathForCopyObject} ) ;
 
                 }
-
-
-
-
 
 
             }
