@@ -67,6 +67,7 @@ public class S3ControllerGetObject {
                 System.out.println("Done");
                 os.close();
 
+
             } catch (IOException ex) {
                 ex.printStackTrace();
             } catch (S3Exception e) {

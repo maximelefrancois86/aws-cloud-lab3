@@ -50,6 +50,28 @@ public class EC2Worker {
         return null;
     }
 
+    public static void deleteMessages(SqsClient sqsClient, String queueUrl, List<Message> messages) {
+
+        System.out.println("\nDeleting the messages");
+
+        try {
+            for (Message message : messages) {
+                DeleteMessageRequest deleteMessageRequest = DeleteMessageRequest.builder()
+                        .queueUrl(queueUrl)
+                        .receiptHandle(message.receiptHandle())
+                        .build();
+                sqsClient.deleteMessage(deleteMessageRequest);
+
+                System.out.println("\n Done");
+            }
+
+
+        } catch (SqsException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+
     public static void main (String args []){
         SqsClient sqsClient = SqsClient.builder()
                 .build();
@@ -67,8 +89,25 @@ public class EC2Worker {
 
 
                 lastRecordedTime=timer;
+                if ( messages!=null){
+                    try {
+                        //extracting the bucket name
+                        String bucket=messages.get(0).body();
+                        //extracting the file name
+                        String fileName=messages.get(1).body();
+                        System.out.println("Bucket name"+bucket);
+                        System.out.println("File name"+fileName);
+                        //Getting the cvs file
+                        S3ControllerGetObject.main(new String[]{bucket,fileName,""});
+                        //Anaylizing the csv file
+                        S3ControllerAnalyseData.main(new String[]{fileName});
+                        deleteMessages(sqsClient,inbox,messages);
+                    } catch (SqsException e) {
+                        System.err.println(e.awsErrorDetails().errorMessage());
+                        System.exit(1);
+                    }
+                }
             }
-
         }
     }
 }
