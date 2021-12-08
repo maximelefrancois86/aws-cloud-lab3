@@ -1,0 +1,4 @@
+Question 1: What type of queues can you create? State their differences.
+
+Question 2: In which situations is a Web-Queue-Worker architecture relevant?
+
