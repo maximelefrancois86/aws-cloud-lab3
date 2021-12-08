@@ -33,12 +33,9 @@ public class ClientApp {
 
             File file = new File(filePathString);
 
-            if (file.isFile()) {
-                System.out.println("\n" + "csv file exist");
-            } else {
-                // ajouter une erreur
-                System.out.println("\n" + "csv file does not exist");
-            }
+            file.isFile();
+            System.out.println("\n" + "csv file exist");
+
 
             sleep(2000); // We add some delay in order to do not have any error because of the time it takes to check if the csv file exist
 
@@ -71,6 +68,8 @@ public class ClientApp {
                     // get the message content
                     List<Message> messages = SQSRetrieveMessage.retrieveMessages(sqsClient,queueURl + "INBOX","INBOX");
 
+                    if(messages.size()>0){
+                        System.out.println(" messages receive");
                     System.out.println(messages);
 
                     // Delete the message
@@ -78,7 +77,10 @@ public class ClientApp {
                     SQSDeleteMessageClient.deleteMessages(sqsClient, queueURl,messages);
 
 
-                    S3ControllerGetObject.main( new String[]{ nameBucket, nameFile, pathForCopyObject} ) ;
+                    S3ControllerGetObject.main( new String[]{ nameBucket, nameFile, pathForCopyObject} ) ; }
+                    else{
+                        System.out.println("no messages receive");
+                    }
 
                 }
 
