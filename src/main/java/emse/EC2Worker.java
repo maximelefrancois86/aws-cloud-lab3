@@ -57,12 +57,12 @@ public class EC2Worker {
         String outbox=createQueue(sqsClient, "OUTBOX");
 
         Long lastRecordedTime=System.currentTimeMillis();
-        List<Message> messages=null;
+
         while(true){
             Long timer=System.currentTimeMillis();
             //we receive messages every minute
             if (timer-lastRecordedTime>60000){
-                messages.addAll(receiveMessages(sqsClient,inbox));
+                List<Message> messages=receiveMessages(sqsClient,inbox);
             }
 
         }
