@@ -4,6 +4,10 @@ import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.*;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+
+
 
 import static java.lang.Thread.sleep;
 
@@ -108,14 +112,16 @@ public class EC2Worker {
                         S3ControllerAnalyseData.main(new String[]{"ec2sales.csv"});
                         deleteMessages(sqsClient,inbox,messages);
                         System.out.println("\n" + "Writing the file into a bucket in the Amazon S3");
-                        S3ControllerPutObject.main(new String[]{bucket, fileName, "ec2sales.csv"});
+                        S3ControllerPutObject.main(new String[]{bucket, "filename.txt", "filename.txt"});
                         System.out.println("\n" + "Sending a message to the Inbox queue with the bucket and file names");
                         String queueURl ="https://sqs.us-west-2.amazonaws.com/528939267914/";
-                        SQSSendMessage.sendMessages(sqsClient, "OUTBOX", bucket, "ec2sales.csv");
+                        SQSSendMessage.sendMessages(sqsClient, queueURl+"OUTBOX", bucket, "filename.txt");
+
                     } catch (SqsException e) {
                         System.err.println(e.awsErrorDetails().errorMessage());
                         System.exit(1);
                     }
+
                 }
             }
         }
