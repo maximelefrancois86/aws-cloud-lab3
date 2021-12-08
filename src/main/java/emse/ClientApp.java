@@ -61,8 +61,15 @@ public class ClientApp {
                 //we check if we receive a message every minute
                 Long timer=System.currentTimeMillis();
                 if (timer-lastRecordedTime>60000){
+                    // get the message content
                     List<Message> messages = SQSRetrieveMessage.retrieveMessages(sqsClient,queueURl + "INBOX","INBOX");
+                    // Delete the message
+                    SQSDeleteMessage.deleteMessages(sqsClient, queueURl,messages);
+
+
                 }
+
+
 
 
 
