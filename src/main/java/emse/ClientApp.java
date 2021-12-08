@@ -1,7 +1,11 @@
 package emse;
 
 
+import software.amazon.awssdk.services.sqs.SqsClient;
+import software.amazon.awssdk.services.sqs.model.Message;
+
 import java.io.*;
+import java.util.List;
 
 import static java.lang.Thread.sleep;
 
@@ -13,6 +17,7 @@ public class ClientApp {
             String nameBucket = "bucket3688";
             String filePathString = "C:\\Users\\caill\\Desktop\\Cours Mines\\Majeure\\cours 2a info\\Cloud\\sales-2021-01-02.csv";
             String nameFile = "sales-2021-01-02.csv";
+            String queueURl ="https://sqs.us-west-2.amazonaws.com/528939267914/";
 
             // Create a bucket for the Web-Queue-Worker architecture
 
@@ -39,9 +44,29 @@ public class ClientApp {
             //Write the file into a bucket in the Amazon S3
 
             S3ControllerPutObject.main(new String[]{nameBucket, nameFile, filePathString});
-        }
 
-        catch (InterruptedException ex) {
+            //Send a message to the Inbox queue with the bucket and file names
+
+            SqsClient sqsClient = SqsClient.builder()
+                    .build();
+
+            SQSSendMessage.sendMessages(sqsClient, "INBOX", nameBucket, nameFile);
+
+            sleep(2000); // We add some delay in order to do not have any error because of the time it takes to send a message to the Inbox queue with the bucket and file names
+
+
+            boolean running = true;
+
+            while (running) {
+
+                int times = 0;
+
+                List<Message> messages = SQSRetrieveMessage.retrieveMessages(sqsClient,queueURl + "INBOX","INBOX");
+
+            }
+
+
+        } catch (InterruptedException ex) {
 
             ex.printStackTrace();
 
