@@ -83,22 +83,25 @@ public class EC2Worker {
         while(true){
             Long timer=System.currentTimeMillis();
             //we receive messages every minute
-            if (timer-lastRecordedTime>60000){
+            if (timer-lastRecordedTime>10000){
                 List<Message> messages=receiveMessages(sqsClient,inbox);
 
 
 
                 lastRecordedTime=timer;
-                if ( messages!=null){
+                if ( messages.size()>0){
+                    System.out.println("a message has been receved");
                     try {
                         //extracting the bucket name
+                        System.out.println("number fo message :"+messages.size());
                         String bucket=messages.get(0).body();
+                        System.out.println("Bucket name : "+bucket);
+
                         //extracting the file name
                         String fileName=messages.get(1).body();
-                        System.out.println("Bucket name"+bucket);
-                        System.out.println("File name"+fileName);
+                        System.out.println("File name : "+fileName);
                         //Getting the cvs file
-                        S3ControllerGetObject.main(new String[]{bucket,fileName,""});
+                        S3ControllerGetObject.main(new String[]{bucket,fileName,"ec2sales.csv"});
                         //Anaylizing the csv file
                         S3ControllerAnalyseData.main(new String[]{fileName});
                         deleteMessages(sqsClient,inbox,messages);
