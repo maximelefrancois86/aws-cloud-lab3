@@ -21,9 +21,9 @@ public class ClientApp {
 
             // Create a bucket for the Web-Queue-Worker architecture
 
-            //S3ControllerCreate.main(new String[]{nameBucket});
+            S3ControllerCreate.main(new String[]{nameBucket});
 
-            //sleep(4000); // We add some delay in order to do not have any error because of the time it takes to create the bucket
+            sleep(4000); // We add some delay in order to do not have any error because of the time it takes to create the bucket
 
 
             // Check if the csv file exist in the local hard-disk
@@ -62,7 +62,7 @@ public class ClientApp {
 
                 //we check if we receive a message every minute
                 Long timer=System.currentTimeMillis();
-                if (timer-lastRecordedTime>10000){
+                if (timer-lastRecordedTime>100000){
                     System.out.println("\n" + "Checking if we receive message");
 
                     // get the message content
