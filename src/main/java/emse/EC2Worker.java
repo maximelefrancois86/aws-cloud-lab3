@@ -108,6 +108,7 @@ public class EC2Worker {
                         System.out.println("\n" + "Writing the file into a bucket in the Amazon S3");
                         S3ControllerPutObject.main(new String[]{bucket, fileName, "ec2sales.csv"});
                         System.out.println("\n" + "Sending a message to the Inbox queue with the bucket and file names");
+                        String queueURl ="https://sqs.us-west-2.amazonaws.com/528939267914/";
                         SQSSendMessage.sendMessages(sqsClient, "OUTBOX", bucket, "ec2sales.csv");
                     } catch (SqsException e) {
                         System.err.println(e.awsErrorDetails().errorMessage());
