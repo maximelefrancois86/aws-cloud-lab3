@@ -5,6 +5,8 @@ import software.amazon.awssdk.services.sqs.model.*;
 
 import java.util.List;
 
+import static java.lang.Thread.sleep;
+
 public class EC2Worker {
 
     public static String createQueue(SqsClient sqsClient, String queueName ) {
