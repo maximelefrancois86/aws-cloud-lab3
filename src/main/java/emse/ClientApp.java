@@ -10,9 +10,9 @@ public class ClientApp {
     public static void main(String[] args) {
 
         try {
-            String nameBucket = "bucket3688480748";
+            String nameBucket = "bucket3688";
             String filePathString = "C:\\Users\\caill\\Desktop\\Cours Mines\\Majeure\\cours 2a info\\Cloud\\sales-2021-01-02.csv";
-            String nameFile = "sales-2021-01-02.csv"
+            String nameFile = "sales-2021-01-02.csv";
 
             // Create a bucket for the Web-Queue-Worker architecture
 
@@ -34,16 +34,20 @@ public class ClientApp {
                 System.out.println("\n" + "csv file does not exist");
             }
 
+            sleep(2000); // We add some delay in order to do not have any error because of the time it takes to check if the csv file exist
+
             //Write the file into a bucket in the Amazon S3
+
+            S3ControllerPutObject.main(new String[]{nameBucket, nameFile, filePathString});
         }
 
+        catch (InterruptedException ex) {
 
-        S3ControllerPutObject.main(new String[]{nameBucket, nameFile,filePathString });
+            ex.printStackTrace();
 
-
+        }
     }
-
-
-
-
 }
+
+
+
