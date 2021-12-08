@@ -12,13 +12,12 @@ import static java.lang.Thread.sleep;
 public class ClientApp {
 
     public static void main(String[] args) {
-
         try {
             String nameBucket = "bucket36223322";
             String filePathString = "C:\\Users\\caill\\Desktop\\Cours Mines\\Majeure\\cours 2a info\\Cloud\\sales-2021-01-02.csv";
-            String nameFile = "sales-2021-01-02.csv";
+            String nameSendFile = "sales-2021-01-02.csv";
             String queueURl ="https://sqs.us-west-2.amazonaws.com/528939267914/";
-            String pathForCopyObject = "C:\\Users\\caill\\Desktop\\Cours Mines\\Majeure\\cours 2a info\\Cloud\\ResultatEC2";
+            String pathForCopyObject = "C:\\Users\\caill\\Desktop\\Cours Mines\\Majeure\\cours 2a info\\Cloud\\ResultatEC2.txt";
 
             // Create a bucket for the Web-Queue-Worker architecture
 
@@ -43,7 +42,7 @@ public class ClientApp {
 
             System.out.println("\n" + "Writing the file into a bucket in the Amazon S3");
 
-            S3ControllerPutObject.main(new String[]{nameBucket, nameFile, filePathString});
+            S3ControllerPutObject.main(new String[]{nameBucket, nameSendFile, filePathString});
 
             //Send a message to the Inbox queue with the bucket and file names
 
@@ -52,7 +51,7 @@ public class ClientApp {
             SqsClient sqsClient = SqsClient.builder()
                     .build();
 
-            SQSSendMessage.sendMessages(sqsClient, "INBOX", nameBucket, nameFile);
+            SQSSendMessage.sendMessages(sqsClient, "INBOX", nameBucket,nameSendFile);
 
             sleep(2000); // We add some delay in order to do not have any error because of the time it takes to send a message to the Inbox queue with the bucket and file names
 
@@ -60,26 +59,38 @@ public class ClientApp {
             boolean running = true;
             Long lastRecordedTime=System.currentTimeMillis();
             while (running) {
+
                 //we check if we receive a message every minute
                 Long timer=System.currentTimeMillis();
-                if (timer-lastRecordedTime>60000){
+                if (timer-lastRecordedTime>10000){
                     System.out.println("\n" + "Checking if we receive message");
 
                     // get the message content
-                    List<Message> messages = SQSRetrieveMessage.retrieveMessages(sqsClient,queueURl + "INBOX","INBOX");
+                    List<Message> messages = SQSRetrieveMessage.retrieveMessages(sqsClient,queueURl + "OUTBOX","INBOX");
 
                     if(messages.size()>0){
                         System.out.println(" messages receive");
-                    System.out.println(messages);
+                        System.out.println(messages);
 
-                    // Delete the message
-                    System.out.println("\n" + "Deleting Message");
-                    SQSDeleteMessageClient.deleteMessages(sqsClient, queueURl,messages);
+                        System.out.println("Number of message(s) :"+messages.size());
+                        //extracting the bucket name
+                        nameBucket =messages.get(0).body();
+                        System.out.println("Bucket name : "+ nameBucket);
+                        //extracting the file name
+                        String nameReceiveFile = messages.get(1).body();
+                        System.out.println("File name : "+nameReceiveFile);
+
+                        // Delete the message
+                        System.out.println("\n" + "Deleting Message");
+                        SQSDeleteMessageClient.deleteMessages(sqsClient, queueURl + "OUTBOX",messages);
 
 
-                    S3ControllerGetObject.main( new String[]{ nameBucket, nameFile, pathForCopyObject} ) ; }
+
+
+                        S3ControllerGetObject.main( new String[]{ nameBucket, nameReceiveFile, pathForCopyObject} ) ; }
+
                     else{
-                        System.out.println("no messages receive");
+                        System.out.println("no messages receive, we are going to do another checking in one minute");
                     }
 
                 }
@@ -91,6 +102,7 @@ public class ClientApp {
         } catch (InterruptedException ex) {
 
             ex.printStackTrace();
+            System.exit(1);
 
         }
     }
