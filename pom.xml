@@ -31,7 +31,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>src/main/java/emse/ClientApp.java</mainClass>
+                            <mainClass>emse.EC2Worker</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
