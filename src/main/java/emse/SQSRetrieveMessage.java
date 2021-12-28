@@ -15,7 +15,7 @@ public class SQSRetrieveMessage {
 
 
         try {
-            // snippet-start:[sqs.java2.sqs_example.retrieve_messages]
+
             ReceiveMessageRequest receiveMessageRequest = ReceiveMessageRequest.builder()
                     .queueUrl(queueUrl)
                     .maxNumberOfMessages(5)

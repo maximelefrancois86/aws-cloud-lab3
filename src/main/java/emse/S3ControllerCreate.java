@@ -27,13 +27,13 @@ public class S3ControllerCreate {
         String bucketName = args[0];
 
 
-       // String bucketName = "buecket38379";
+       // String bucketName = "bucket38379";
 
         System.out.format("Creating a bucket named %s\n",
                 bucketName);
 
 
-        // String bucketName = "buecket80738738";
+        // String bucketName = "bucket80738738";
         S3Client s3 = S3Client.builder()
                 .build();
 

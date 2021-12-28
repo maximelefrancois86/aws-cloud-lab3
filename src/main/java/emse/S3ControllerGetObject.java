@@ -43,7 +43,7 @@ public class S3ControllerGetObject {
 
         public static void getObjectBytes(S3Client s3, String bucketName, String keyName, String path) {
 
-            System.out.println("Starting retrieve the file from the Amazon S3 ");
+            System.out.println("Starting retrieve the file from the Amazon S3 and uploading it on local disk ");
 
             try {
 

@@ -1,5 +1,5 @@
-package emse;
 
+package emse;
 
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.Message;
@@ -17,7 +17,7 @@ public class ClientApp {
             String filePathString = "C:\\Users\\caill\\Desktop\\Cours Mines\\Majeure\\cours 2a info\\Cloud\\sales-2021-01-02.csv";
             String nameSendFile = "sales-2021-01-02.csv";
             String queueURl ="https://sqs.us-west-2.amazonaws.com/528939267914/";
-            String pathForCopyObject = "C:\\Users\\caill\\Desktop\\Cours Mines\\Majeure\\cours 2a info\\Cloud\\ResultatEC2.txt";
+            String pathForCopyObject = "C:\\Users\\caill\\Desktop\\Cours Mines\\Majeure\\cours 2a info\\Cloud\\ResultatEC2Worker.txt";
 
             // Create a bucket for the Web-Queue-Worker architecture
 
@@ -62,13 +62,13 @@ public class ClientApp {
 
                 //we check if we receive a message every minute
                 Long timer=System.currentTimeMillis();
-                if (timer-lastRecordedTime>100000){
+                if (timer-lastRecordedTime>10000){
                     System.out.println("\n" + "Checking if we receive message");
 
                     // get the message content
                     List<Message> messages = SQSRetrieveMessage.retrieveMessages(sqsClient,queueURl + "OUTBOX","INBOX");
-
-                    if(messages.size()>0){
+                    lastRecordedTime=timer;
+                    if(messages.size()>1){
                         System.out.println(" messages receive");
                         System.out.println(messages);
 
@@ -80,14 +80,13 @@ public class ClientApp {
                         String nameReceiveFile = messages.get(1).body();
                         System.out.println("File name : "+nameReceiveFile);
 
-                        // Delete the message
-                        System.out.println("\n" + "Deleting Message");
+                        // Delete the messages
                         SQSDeleteMessageClient.deleteMessages(sqsClient, queueURl + "OUTBOX",messages);
 
-
-
-
-                        S3ControllerGetObject.main( new String[]{ nameBucket, nameReceiveFile, pathForCopyObject} ) ; }
+                        // Uploading the file that contain value calculated by the EC2 Worker
+                        S3ControllerGetObject.main( new String[]{ nameBucket, nameReceiveFile, pathForCopyObject} ) ;
+                        System.out.println("\n" + "The Client App program is finished ");
+                    }
 
                     else{
                         System.out.println("no messages receive, we are going to do another checking in one minute");
