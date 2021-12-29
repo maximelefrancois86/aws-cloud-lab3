@@ -1,0 +1,672 @@
+Country : France
+Average amount sold per product in France : 1445$
+Amount of product1 sold : 2 TOTAL : 1648$
+Amount of product7 sold : 3 TOTAL : 3126$
+Amount of product3 sold : 3 TOTAL : 867$
+Amount of product2 sold : 2 TOTAL : 912$
+Amount of product4 sold : 5 TOTAL : 995$
+Amount of product8 sold : 2 TOTAL : 1318$
+Amount of product5 sold : 5 TOTAL : 2720$
+Amount of product9 sold : 2 TOTAL : 98$
+Amount of product6 sold : 3 TOTAL : 1326$
+==========================
+Country : United States
+Average amount sold per product in United States : 25080$
+Amount of product1 sold : 39 TOTAL : 32136$
+Amount of product7 sold : 50 TOTAL : 52100$
+Amount of product3 sold : 54 TOTAL : 15606$
+Amount of product2 sold : 52 TOTAL : 23712$
+Amount of product4 sold : 49 TOTAL : 9751$
+Amount of product8 sold : 55 TOTAL : 36245$
+Amount of product5 sold : 52 TOTAL : 28288$
+Amount of product9 sold : 55 TOTAL : 2695$
+Amount of product6 sold : 57 TOTAL : 25194$
+==========================
+Country : Switzerland
+Average amount sold per product in Switzerland : 1948$
+Amount of product1 sold : 2 TOTAL : 1648$
+Amount of product7 sold : 4 TOTAL : 4168$
+Amount of product3 sold : 2 TOTAL : 578$
+Amount of product2 sold : 5 TOTAL : 2280$
+Amount of product4 sold : 6 TOTAL : 1194$
+Amount of product8 sold : 2 TOTAL : 1318$
+Amount of product5 sold : 5 TOTAL : 2720$
+Amount of product9 sold : 2 TOTAL : 98$
+Amount of product6 sold : 8 TOTAL : 3536$
+==========================
+Country : Canada
+Average amount sold per product in Canada : 4522$
+Amount of product1 sold : 10 TOTAL : 8240$
+Amount of product7 sold : 12 TOTAL : 12504$
+Amount of product3 sold : 8 TOTAL : 2312$
+Amount of product2 sold : 8 TOTAL : 3648$
+Amount of product4 sold : 8 TOTAL : 1592$
+Amount of product8 sold : 5 TOTAL : 3295$
+Amount of product5 sold : 8 TOTAL : 4352$
+Amount of product9 sold : 7 TOTAL : 343$
+Amount of product6 sold : 10 TOTAL : 4420$
+==========================
+Country : Spain
+Average amount sold per product in Spain : 931$
+Amount of product1 sold : 1 TOTAL : 824$
+Amount of product7 sold : 4 TOTAL : 4168$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 1 TOTAL : 456$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 3 TOTAL : 1632$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 1 TOTAL : 442$
+==========================
+Country : Australia
+Average amount sold per product in Australia : 2156$
+Amount of product1 sold : 5 TOTAL : 4120$
+Amount of product7 sold : 3 TOTAL : 3126$
+Amount of product3 sold : 5 TOTAL : 1445$
+Amount of product2 sold : 4 TOTAL : 1824$
+Amount of product4 sold : 5 TOTAL : 995$
+Amount of product8 sold : 6 TOTAL : 3954$
+Amount of product5 sold : 3 TOTAL : 1632$
+Amount of product9 sold : 2 TOTAL : 98$
+Amount of product6 sold : 5 TOTAL : 2210$
+==========================
+Country : Ireland
+Average amount sold per product in Ireland : 2677$
+Amount of product1 sold : 4 TOTAL : 3296$
+Amount of product7 sold : 6 TOTAL : 6252$
+Amount of product3 sold : 7 TOTAL : 2023$
+Amount of product2 sold : 2 TOTAL : 912$
+Amount of product4 sold : 4 TOTAL : 796$
+Amount of product8 sold : 4 TOTAL : 2636$
+Amount of product5 sold : 8 TOTAL : 4352$
+Amount of product9 sold : 6 TOTAL : 294$
+Amount of product6 sold : 8 TOTAL : 3536$
+==========================
+Country : United Kingdom
+Average amount sold per product in United Kingdom : 5799$
+Amount of product1 sold : 13 TOTAL : 10712$
+Amount of product7 sold : 18 TOTAL : 18756$
+Amount of product3 sold : 16 TOTAL : 4624$
+Amount of product2 sold : 8 TOTAL : 3648$
+Amount of product4 sold : 10 TOTAL : 1990$
+Amount of product8 sold : 5 TOTAL : 3295$
+Amount of product5 sold : 10 TOTAL : 5440$
+Amount of product9 sold : 13 TOTAL : 637$
+Amount of product6 sold : 7 TOTAL : 3094$
+==========================
+Country : Norway
+Average amount sold per product in Norway : 1044$
+Amount of product1 sold : 2 TOTAL : 1648$
+Amount of product7 sold : 4 TOTAL : 4168$
+Amount of product3 sold : 3 TOTAL : 867$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 3 TOTAL : 1977$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 2 TOTAL : 98$
+Amount of product6 sold : 1 TOTAL : 442$
+==========================
+Country : Sweden
+Average amount sold per product in Sweden : 684$
+Amount of product1 sold : 1 TOTAL : 824$
+Amount of product7 sold : 1 TOTAL : 1042$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 2 TOTAL : 912$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 2 TOTAL : 1318$
+Amount of product5 sold : 3 TOTAL : 1632$
+Amount of product9 sold : 3 TOTAL : 147$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Denmark
+Average amount sold per product in Denmark : 914$
+Amount of product1 sold : 2 TOTAL : 1648$
+Amount of product7 sold : 2 TOTAL : 2084$
+Amount of product3 sold : 3 TOTAL : 867$
+Amount of product2 sold : 3 TOTAL : 1368$
+Amount of product4 sold : 2 TOTAL : 398$
+Amount of product8 sold : 2 TOTAL : 1318$
+Amount of product5 sold : 1 TOTAL : 544$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Netherlands
+Average amount sold per product in Netherlands : 1103$
+Amount of product1 sold : 1 TOTAL : 824$
+Amount of product7 sold : 3 TOTAL : 3126$
+Amount of product3 sold : 3 TOTAL : 867$
+Amount of product2 sold : 2 TOTAL : 912$
+Amount of product4 sold : 3 TOTAL : 597$
+Amount of product8 sold : 3 TOTAL : 1977$
+Amount of product5 sold : 1 TOTAL : 544$
+Amount of product9 sold : 4 TOTAL : 196$
+Amount of product6 sold : 2 TOTAL : 884$
+==========================
+Country : Germany
+Average amount sold per product in Germany : 1239$
+Amount of product1 sold : 2 TOTAL : 1648$
+Amount of product7 sold : 2 TOTAL : 2084$
+Amount of product3 sold : 5 TOTAL : 1445$
+Amount of product2 sold : 3 TOTAL : 1368$
+Amount of product4 sold : 4 TOTAL : 796$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 4 TOTAL : 2176$
+Amount of product9 sold : 2 TOTAL : 98$
+Amount of product6 sold : 2 TOTAL : 884$
+==========================
+Country : United Arab Emirates
+Average amount sold per product in United Arab Emirates : 341$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 1 TOTAL : 1042$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 2 TOTAL : 884$
+==========================
+Country : India
+Average amount sold per product in India : 164$
+Amount of product1 sold : 1 TOTAL : 824$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : The Bahamas
+Average amount sold per product in The Bahamas : 78$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 1 TOTAL : 49$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Brazil
+Average amount sold per product in Brazil : 359$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 2 TOTAL : 2084$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Hungary
+Average amount sold per product in Hungary : 103$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 1 TOTAL : 442$
+==========================
+Country : Austria
+Average amount sold per product in Austria : 388$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 1 TOTAL : 1042$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 2 TOTAL : 1318$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 1 TOTAL : 49$
+Amount of product6 sold : 2 TOTAL : 884$
+==========================
+Country : Czech Republic
+Average amount sold per product in Czech Republic : 121$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 1 TOTAL : 456$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 1 TOTAL : 442$
+==========================
+Country : South Africa
+Average amount sold per product in South Africa : 271$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 1 TOTAL : 1042$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 2 TOTAL : 912$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Italy
+Average amount sold per product in Italy : 790$
+Amount of product1 sold : 2 TOTAL : 1648$
+Amount of product7 sold : 2 TOTAL : 2084$
+Amount of product3 sold : 3 TOTAL : 867$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 3 TOTAL : 597$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 1 TOTAL : 544$
+Amount of product9 sold : 1 TOTAL : 49$
+Amount of product6 sold : 3 TOTAL : 1326$
+==========================
+Country : Malta
+Average amount sold per product in Malta : 111$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 1 TOTAL : 456$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 1 TOTAL : 544$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Belgium
+Average amount sold per product in Belgium : 435$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 1 TOTAL : 1042$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 2 TOTAL : 398$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 2 TOTAL : 1088$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 1 TOTAL : 442$
+==========================
+Country : Bermuda
+Average amount sold per product in Bermuda : 60$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 1 TOTAL : 544$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Latvia
+Average amount sold per product in Latvia : 73$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Russia
+Average amount sold per product in Russia : 22$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Finland
+Average amount sold per product in Finland : 10$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 2 TOTAL : 98$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : New Zealand
+Average amount sold per product in New Zealand : 357$
+Amount of product1 sold : 1 TOTAL : 824$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 1 TOTAL : 456$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 1 TOTAL : 544$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 1 TOTAL : 442$
+==========================
+Country : Turkey
+Average amount sold per product in Turkey : 323$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 2 TOTAL : 2084$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 2 TOTAL : 98$
+Amount of product6 sold : 1 TOTAL : 442$
+==========================
+Country : Moldova
+Average amount sold per product in Moldova : 60$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 1 TOTAL : 544$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Malaysia
+Average amount sold per product in Malaysia : 91$
+Amount of product1 sold : 1 TOTAL : 824$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Dominican Republic
+Average amount sold per product in Dominican Republic : 91$
+Amount of product1 sold : 1 TOTAL : 824$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Philippines
+Average amount sold per product in Philippines : 37$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 1 TOTAL : 49$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Greece
+Average amount sold per product in Greece : 32$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Thailand
+Average amount sold per product in Thailand : 137$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 1 TOTAL : 1042$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Cayman Isls
+Average amount sold per product in Cayman Isls : 32$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Poland
+Average amount sold per product in Poland : 10$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 2 TOTAL : 98$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Bahrain
+Average amount sold per product in Bahrain : 73$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Jersey
+Average amount sold per product in Jersey : 91$
+Amount of product1 sold : 1 TOTAL : 824$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Iceland
+Average amount sold per product in Iceland : 115$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 1 TOTAL : 1042$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : China
+Average amount sold per product in China : 22$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Japan
+Average amount sold per product in Japan : 37$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 1 TOTAL : 49$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Luxembourg
+Average amount sold per product in Luxembourg : 22$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Mauritius
+Average amount sold per product in Mauritius : 49$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 1 TOTAL : 442$
+==========================
+Country : Romania
+Average amount sold per product in Romania : 32$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 1 TOTAL : 289$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Argentina
+Average amount sold per product in Argentina : 50$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 1 TOTAL : 456$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Guatemala
+Average amount sold per product in Guatemala : 22$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Monaco
+Average amount sold per product in Monaco : 164$
+Amount of product1 sold : 1 TOTAL : 824$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 1 TOTAL : 659$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Costa Rica
+Average amount sold per product in Costa Rica : 5$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 1 TOTAL : 49$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : South Korea
+Average amount sold per product in South Korea : 60$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 1 TOTAL : 544$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Israel
+Average amount sold per product in Israel : 49$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 1 TOTAL : 442$
+==========================
+Country : Kuwait
+Average amount sold per product in Kuwait : 22$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Bulgaria
+Average amount sold per product in Bulgaria : 5$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 1 TOTAL : 49$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Ukraine
+Average amount sold per product in Ukraine : 22$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 1 TOTAL : 199$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 0 TOTAL : 0$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
+Country : Hong Kong
+Average amount sold per product in Hong Kong : 60$
+Amount of product1 sold : 0 TOTAL : 0$
+Amount of product7 sold : 0 TOTAL : 0$
+Amount of product3 sold : 0 TOTAL : 0$
+Amount of product2 sold : 0 TOTAL : 0$
+Amount of product4 sold : 0 TOTAL : 0$
+Amount of product8 sold : 0 TOTAL : 0$
+Amount of product5 sold : 1 TOTAL : 544$
+Amount of product9 sold : 0 TOTAL : 0$
+Amount of product6 sold : 0 TOTAL : 0$
+==========================
