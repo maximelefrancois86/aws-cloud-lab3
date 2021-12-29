@@ -8,7 +8,12 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-
+/*TO DO:
+* Supprimer les fichiers ec2 csv et data txt en fin de boucle
+* Adapter le temps d'attente
+* Optimer les messages affichés en console (ex receive messages)
+* Chercher la question 2
+ */
 
 
 import static java.lang.Thread.sleep;

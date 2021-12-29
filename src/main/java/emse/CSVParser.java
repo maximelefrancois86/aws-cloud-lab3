@@ -67,7 +67,7 @@ public class CSVParser {
                 }
 
 
-                for (String country : transactions.getCountries()) {
+               /* for (String country : transactions.getCountries()) {
                     System.out.println("Country : " + country+"\n");
                     System.out.println("Average amount sold per product in " + country + " : " + transactions.averageSoldPerCountryPerProduct(country) + "$");
                     for (String product : transactions.getProducts()) {
@@ -75,7 +75,7 @@ public class CSVParser {
                     }
                     System.out.println("==========================\n");
 
-                }
+                }*/
             }
         }
     }
