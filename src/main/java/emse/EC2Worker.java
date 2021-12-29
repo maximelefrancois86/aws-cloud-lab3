@@ -1,8 +1,10 @@
 package emse;
 
+import com.opencsv.exceptions.CsvException;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.*;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -99,7 +101,7 @@ public class EC2Worker {
                     System.out.println("a message has been receved");
                     try {
                         //extracting the bucket name
-                        System.out.println("number fo message :"+messages.size());
+                        System.out.println("number of messages :"+messages.size());
                         String bucket=messages.get(0).body();
                         System.out.println("Bucket name : "+bucket);
 
@@ -109,13 +111,20 @@ public class EC2Worker {
                         //Getting the cvs file
                         S3ControllerGetObject.main(new String[]{bucket,fileName,"ec2sales.csv"});
                         //Anaylizing the csv file
-                        S3ControllerAnalyseData.main(new String[]{"ec2sales.csv"});
+                        //S3ControllerAnalyseData.main(new String[]{"ec2sales.csv"});
+                        try {
+                            CSVParser.main(new String[]{"ec2sales.csv"});
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        } catch (CsvException e) {
+                            e.printStackTrace();
+                        }
                         deleteMessages(sqsClient,inbox,messages);
                         System.out.println("\n" + "Writing the file into a bucket in the Amazon S3");
-                        S3ControllerPutObject.main(new String[]{bucket, "filename.txt", "filename.txt"});
+                        S3ControllerPutObject.main(new String[]{bucket, "data.txt", "data.txt"});
                         System.out.println("\n" + "Sending a message to the Inbox queue with the bucket and file names");
                         String queueURl ="https://sqs.us-west-2.amazonaws.com/528939267914/";
-                        SQSSendMessage.sendMessages(sqsClient, queueURl+"OUTBOX", bucket, "filename.txt");
+                        SQSSendMessage.sendMessages(sqsClient, queueURl+"OUTBOX", bucket, "data.txt");
 
                     } catch (SqsException e) {
                         System.err.println(e.awsErrorDetails().errorMessage());

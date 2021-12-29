@@ -1,4 +1,0 @@
-DATA 
-
-max value: 0
-minvaluess: 1000000000
