@@ -1,10 +1,13 @@
+C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\Transaction.java
+C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\SQSCreateQueue.java
 C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\SQSDeleteMessageClient.java
 C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\SQSSendMessage.java
 C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\ClientApp.java
 C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\EC2Worker.java
 C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\S3ControllerCreate.java
 C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\S3ControllerAnalyseData.java
-C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\SQSCreateQueue.java
 C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\SQSRetrieveMessage.java
+C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\CSVParser.java
 C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\S3ControllerPutObject.java
+C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\TransactionList.java
 C:\Users\caill\Desktop\aws-cloud-lab3\src\main\java\emse\S3ControllerGetObject.java
