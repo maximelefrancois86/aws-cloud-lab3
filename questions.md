@@ -1,6 +1,6 @@
-#Lab Questions 
+# Lab Questions 
 
-##Question 1: What type of queues can you create? State their differences?
+## Question 1: What type of queues can you create? State their differences?
 
 When I try to create a queue, aws offers me the choice between Standard queue and FIFO queue.
 
