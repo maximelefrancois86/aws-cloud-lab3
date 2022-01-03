@@ -1,10 +1,10 @@
 emse\ClientApp.class
 emse\S3ControllerPutObject.class
 emse\S3ControllerAnalyseData.class
-emse\SQSRetrieveMessage.class
 emse\S3ControllerGetObject.class
 emse\EC2Worker.class
 emse\S3ControllerCreate.class
+emse\SQSRetrieveMessage.class
 emse\SQSSendMessage.class
 emse\SQSCreateQueue.class
 emse\SQSDeleteMessageClient.class

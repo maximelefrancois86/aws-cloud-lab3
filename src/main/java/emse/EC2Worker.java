@@ -88,8 +88,8 @@ public class EC2Worker {
 
         while (true) {
             Long timer = System.currentTimeMillis();
-            //we cjeck for messages every 10 seconds
-            if (timer - lastRecordedTime > 10000) {
+            //we check for messages every 60 seconds
+            if (timer - lastRecordedTime > 60000) {
                 List<Message> messages = receiveMessages(sqsClient, inbox);
 
 

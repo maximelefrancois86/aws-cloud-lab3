@@ -62,7 +62,7 @@ public class ClientApp {
 
                 //we check if we receive a message every minute
                 Long timer=System.currentTimeMillis();
-                if (timer-lastRecordedTime>10000){
+                if (timer-lastRecordedTime>60000){
                     System.out.println("\n" + "Checking if we receive message");
 
                     // get the message content
@@ -93,7 +93,6 @@ public class ClientApp {
                     }
 
                 }
-
 
             }
 
