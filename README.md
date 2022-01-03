@@ -34,12 +34,17 @@ Other Classes used in the Client component :
 ### The Worker
 File : [EC2Worker.java](https://github.com/maxant38/aws-cloud-lab3/blob/master/src/main/java/emse/EC2Worker.java)
 The Worker is responsible for :
--wait for a message from the Client
--once the message is received with the name of the file to process, read the file
--calculate (a) the Total Number of Sales, (b) the Total Amount Sold and (c) the Average Sold per country and per product
--write a file in the cloud
--send a message with the name of the file to the Client
--wait for another message
+-	wait for a message from the Client
+
+-	once the message is received with the name of the file to process, read the file
+
+-	calculate (a) the Total Number of Sales, (b) the Total Amount Sold and (c) the Average Sold per country and per product
+
+-	write a file in the cloud
+
+-	send a message with the name of the file to the Client
+
+-	wait for another message
 
 
 Other Classes used in the Worker component :
