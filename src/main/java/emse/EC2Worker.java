@@ -88,14 +88,14 @@ public class EC2Worker {
 
         while (true) {
             Long timer = System.currentTimeMillis();
-            //we cjeck for messages every 10 seconds
-            if (timer - lastRecordedTime > 10000) {
+            //we cjeck for messages every 60 seconds
+            if (timer - lastRecordedTime > 60000) {
                 List<Message> messages = receiveMessages(sqsClient, inbox);
 
 
                 lastRecordedTime = timer;
                 if (messages.size() == 2) {
-                    System.out.println("a message has been receved");
+                    System.out.println("a message has been received");
                     try {
                         //extracting the bucket name
                         System.out.println("number of messages :" + messages.size());
