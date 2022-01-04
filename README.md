@@ -1,6 +1,10 @@
 <!-- ABOUT THE PROJECT -->
 # About The Project
 
+[Lab instructions](https://gnardin.pages.emse.fr/website/cloud/2021Fall/lab/lab3.html)
+
+[Lab's answers](https://github.com/maxant38/aws-cloud-lab3/blob/master/questions.md)
+
 ## Project participants:
 
 - Caille Maxence - maxence.caille@etu.emse.fr
@@ -8,10 +12,6 @@
 
 ## Objective:
 -  Developping an application based on the Web-Queue-Worker architecture
-
-[Lab instructions](https://gnardin.pages.emse.fr/website/cloud/2021Fall/lab/lab3.html)
-
-[Lab's answers](https://github.com/maxant38/aws-cloud-lab3/blob/master/questions.md)
 
 ## What's in the github repository:
 
