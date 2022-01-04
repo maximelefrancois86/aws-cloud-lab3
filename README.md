@@ -17,12 +17,15 @@ The application is divided in two main components: the Client and the Worker.
 
 ### The Client
 File : [ClientApp.java](https://github.com/maxant38/aws-cloud-lab3/blob/master/src/main/java/emse/EC2Worker.java)
-The Client is responsible for
--	reading the CSV file
+The Client is responsible for:
+
+-	reading the CSV file 
+
 - upload it into the cloud
+
 - send a message to the Worker signaling that there is a file ready to be processed
-- wait until it receives a message from the Worker that the summarization was completed, and
-- download the resulting file.
+
+- wait until it receives a message from the Worker that the summarization was completed, and download the resulting file.
 
 Other Classes used in the Client component : 
 [S3ControllerCreate](https://github.com/maxant38/aws-cloud-lab3/blob/master/src/main/java/emse/S3ControllerCreate.java),
@@ -35,6 +38,7 @@ Other Classes used in the Client component :
 ### The Worker
 File : [EC2Worker.java](https://github.com/maxant38/aws-cloud-lab3/blob/master/src/main/java/emse/EC2Worker.java)
 The Worker is responsible for :
+
 -	wait for a message from the Client
 
 -	once the message is received with the name of the file to process, read the file
