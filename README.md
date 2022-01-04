@@ -11,6 +11,8 @@
 
 [Lab instructions](https://gnardin.pages.emse.fr/website/cloud/2021Fall/lab/lab3.html)
 
+[Lab's answers](https://github.com/maxant38/aws-cloud-lab3/blob/master/questions.md)
+
 ## What's in the github repository:
 
 The application is divided in two main components: the Client and the Worker.
