@@ -9,6 +9,7 @@
 ## Objective:
 -  Developping an application based on the Web-Queue-Worker architecture
 
+[The lab](https://gnardin.pages.emse.fr/website/cloud/2021Fall/lab/lab3.html)
 
 ## What's in the github repository:
 
