@@ -17,6 +17,7 @@ The application is divided in two main components: the Client and the Worker.
 
 ### The Client
 File : [ClientApp.java](https://github.com/maxant38/aws-cloud-lab3/blob/master/src/main/java/emse/EC2Worker.java)
+
 The Client is responsible for:
 
 -	reading the CSV file 
@@ -37,6 +38,7 @@ Other Classes used in the Client component :
 
 ### The Worker
 File : [EC2Worker.java](https://github.com/maxant38/aws-cloud-lab3/blob/master/src/main/java/emse/EC2Worker.java)
+
 The Worker is responsible for :
 
 -	wait for a message from the Client
