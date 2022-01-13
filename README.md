@@ -5,6 +5,8 @@
 
 [Lab's answers](https://github.com/maxant38/aws-cloud-lab3/blob/master/questions.md)
 
+This project is licenced under the terms of the MIT licence
+
 ## Project participants:
 
 - Caille Maxence - maxence.caille@etu.emse.fr
