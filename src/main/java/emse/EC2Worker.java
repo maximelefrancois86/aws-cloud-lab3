@@ -35,6 +35,13 @@ public class EC2Worker {
         return "";
     }
 
+    /**
+     *
+     * @param sqsClient  The client you want to receive messages from
+     * @param queueUrl  The SQS queue URL
+     * @return List of Messages or null
+     * @throws SqsException if the SQS queue is invalid
+     */
     public static List<Message> receiveMessages(SqsClient sqsClient, String queueUrl) {
 
         System.out.println("Checking for messages ...");
@@ -53,6 +60,12 @@ public class EC2Worker {
         return null;
     }
 
+    /**
+     *
+     * @param sqsClient The client you want to delete messages from
+     * @param queueUrl The SQS queue URL
+     * @param messages  The List of messages you want to delete
+     */
     public static void deleteMessages(SqsClient sqsClient, String queueUrl, List<Message> messages) {
 
         System.out.println("\nDeleting the messages");

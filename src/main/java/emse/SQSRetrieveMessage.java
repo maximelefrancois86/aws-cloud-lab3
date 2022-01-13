@@ -9,6 +9,14 @@ import java.util.List;
 
 public class SQSRetrieveMessage {
 
+    /**
+     *
+     * @param sqsClient
+     * @param queueUrl
+     * @param queueName
+     * @return List of messages or null
+     * @throws SqsException
+     */
     public static List<Message> retrieveMessages(SqsClient sqsClient, String queueUrl, String queueName) {
 
         System.out.println("\nStart of message retrieval ");

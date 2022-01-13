@@ -9,6 +9,13 @@ import java.util.List;
 
 public class SQSDeleteMessageClient {
 
+    /**
+     *
+     * @param sqsClient
+     * @param queueUrl
+     * @param messages
+     * @throws SqsException
+     */
     public static void deleteMessages(SqsClient sqsClient, String queueUrl, List<Message> messages) {
 
         System.out.println("\nDeleting the messages");

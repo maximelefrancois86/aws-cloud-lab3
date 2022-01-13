@@ -44,6 +44,12 @@ public class S3ControllerCreate {
 
     }
 
+    /**
+     *
+     * @param s3Client
+     * @param bucketName
+     * @throws S3Exception
+     */
     public static void createBucket(S3Client s3Client, String bucketName) {
 
         try {

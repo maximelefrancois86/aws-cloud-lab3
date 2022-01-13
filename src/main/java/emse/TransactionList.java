@@ -3,6 +3,9 @@ package emse;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class is used to regroup all transactions that are present in a CSV file and store some useful informations
+ */
 public class TransactionList {
     private List<Transaction> transactions;
     private List<String> countries;

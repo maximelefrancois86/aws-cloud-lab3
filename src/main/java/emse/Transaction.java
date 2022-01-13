@@ -1,6 +1,9 @@
 package emse;
 
 public class Transaction {
+    /**
+     * This class defines what a transaction is in order to extract information from sales CSV files and use it later
+     */
     private String product;
     private String country;
     private int price;

@@ -41,6 +41,14 @@ public class S3ControllerGetObject {
             s3.close();
         }
 
+    /**
+     *
+     * @param s3
+     * @param bucketName
+     * @param keyName
+     * @param path
+     * @throws S3Exception
+     */
         public static void getObjectBytes(S3Client s3, String bucketName, String keyName, String path) {
 
             System.out.println("Starting retrieve the file from the Amazon S3 and uploading it on local disk ");

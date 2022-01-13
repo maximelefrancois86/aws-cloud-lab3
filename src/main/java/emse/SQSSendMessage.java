@@ -7,6 +7,14 @@ import software.amazon.awssdk.services.sqs.model.SqsException;
 
 public class SQSSendMessage {
 
+    /**
+     *
+     * @param sqsClient
+     * @param queueUrl
+     * @param nameBucket
+     * @param nameFile
+     * @throws SqsException
+     */
     public static void sendMessages(SqsClient sqsClient, String queueUrl, String nameBucket, String nameFile) {
 
         System.out.println("\nSend multiple messages about the name of the bucket and file ");

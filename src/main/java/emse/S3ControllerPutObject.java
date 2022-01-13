@@ -47,7 +47,15 @@ public class S3ControllerPutObject {
             System.out.println("\n Done ");
         }
 
-
+    /**
+     *
+     * @param s3
+     * @param bucketName
+     * @param objectKey
+     * @param objectPath
+     * @return response.eTag() or ""
+     * @throws S3Exception
+     */
         public static String putS3Object(S3Client s3,
                                          String bucketName,
                                          String objectKey,
@@ -77,7 +85,14 @@ public class S3ControllerPutObject {
         }
 
         // Return a byte array
-        private static byte[] getObjectFile(String filePath) {
+
+    /**
+     *
+     * @param filePath
+     * @return byte[] or null
+     * @throws IOException
+     */
+    private static byte[] getObjectFile(String filePath) {
 
             FileInputStream fileInputStream = null;
             byte[] bytesArray = null;

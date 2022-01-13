@@ -8,7 +8,13 @@ import software.amazon.awssdk.services.sqs.model.SqsException;
 
 public class SQSCreateQueue {
 
-
+    /**
+     *
+     * @param sqsClient The SQS Client you want to create the queue in
+     * @param queueName the name of the queue you want to create
+     * @return the queue URL or null
+     * @throws SqsException if the SqsClient is not valid
+     */
     public static String createQueue(SqsClient sqsClient,String queueName ) {
 
         try {
