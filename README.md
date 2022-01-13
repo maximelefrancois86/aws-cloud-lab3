@@ -11,7 +11,16 @@
 - Mathieu Delbos - mathieu.delbos@etu.emse.fr
 
 ## Objective:
--  Developping an application based on the Web-Queue-Worker architecture
+-  Developping an application based on the Web-Queue-Worker architecture to summarize sale transactions from a retailer in a Cloud environment.
+
+## Use the project
+Build the project with Maven : 
+```bash
+mvn package
+```
+Programs to execute : 
+- EC2Worker.java
+- EC2CLient.java
 
 ## What's in the github repository:
 
