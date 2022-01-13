@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Cloud computing Lab 3'
+copyright = '2021, Mathieu D'
+author = 'Mathieu D'
 
 release = '0.1'
-version = '0.1.0'
+version = '1.0.0'
 
 # -- General configuration
 
