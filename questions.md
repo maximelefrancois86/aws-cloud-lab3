@@ -1,12 +1,14 @@
-Question 1: What type of queues can you create? State their differences?
+# Lab Questions 
+
+## Question 1: What type of queues can you create? State their differences?
 
 When I try to create a queue, aws offers me the choice between Standard queue and FIFO queue.
 
-Standard Queue:
+### Standard Queue:
 
 This is the default queue type (we use this type of queue in this project).
 
-Main characteristics :
+### Main characteristics :
 
 -	High Troughput : Standard queues support a nearly unlimited number of API calls per second, per API action.
 
@@ -19,9 +21,9 @@ You can use standard message queues in many scenarios, as long as your applicati
 -	Allocate tasks to multiple worker nodes – Process a high number of credit card validation requests.
 -	Batch messages for future processing – Schedule multiple entries to be added to a database.
 
-FIFO (First-in-first-out) Queue:
+### FIFO (First-in-first-out) Queue:
 
-Main characteristics :
+### Main characteristics :
 
 -   FIFO queues have all the capabilities of the standard queue.
 
@@ -40,7 +42,7 @@ Examples of situations where you might use FIFO queues include the following:
 -   To prevent a student from enrolling in a course before registering for an account.
 
 
-Sum up of the main differences between FIFO and Standard Queue:
+### Sum up of the main differences between FIFO and Standard Queue:
 
 Message Order:
 
@@ -72,6 +74,7 @@ Supported services:
 -   FIFO Queues are currently not supported by all AWS services like: CloudWatch Events, S3 Event Notifications, SNS Topic Subscriptions, Auto Scaling Lifecycle Hooks, AWS IoT Rule Actions, AWS Lambda Dead Letter Queues.
 
 Sources:
+
 https://us-west-2.console.aws.amazon.com/sqs/v2/home?region=us-west-2#/create-queue
 https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html
 https://medium.com/awesome-cloud/aws-difference-between-sqs-standard-and-fifo-first-in-first-out-queues-28d1ea5e153
@@ -79,10 +82,18 @@ https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-
 
 _______________________________________________________________________________________________________________________________________
 
-Question 2: In which situations is a Web-Queue-Worker architecture relevant?
+## Question 2: In which situations is a Web-Queue-Worker architecture relevant?
 
 According to the Windows Azure documentation, this architecture is relevant for the following cases:
-    -Applications with a relatively simple domain.
-    -Applications with some long-running workflows or batch operations.
-    -When you want to use managed services, rather than infrastructure as a service (IaaS)
+-   Applications with a relatively simple domain.
+-   Applications with some long-running workflows or batch operations.
+-   When you want to use managed services, rather than infrastructure as a service (IaaS)
+
+Moreover you should use this architecture if you want to benefit one or several of these advantages : 
+
+-    Relatively simple architecture that is easy to understand.
+-   Easy to deploy and manage.
+-   Clear separation of concerns.
+-   The front end is decoupled from the worker using asynchronous messaging.
+-   The front end and the worker can be scaled independently.
 
