@@ -6,28 +6,33 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use the project, first build the project:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   $ mvn package
 
-Creating recipes
+Using the Worker
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+EC2 Worker: a Java application (with one class that includes main method) that runs on an EC2 instance. It does the following tasks:
 
-.. autofunction:: lumache.get_random_ingredients
+-  Create an AWS SQS queue named Inbox to receive messages from clients with ``createQueue()`` function
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+-  Create an AWS SQS queue named Outbox to send messages to clients with ``createQueue()`` function
 
-.. autoexception:: lumache.InvalidKindError
+-  Check for a message in the Inbox queue every 1 minute with ``receiveMessages`` function
 
-For example:
+-  If there is a message, retrieve and delete the message from the queue with ``deleteMessages(sqsClient, inbox, messages)`` function
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+-  Retrieve the file from the Amazon S3 whose bucket and name are indicated in the message body with ``S3ControllerGetObject`` class
+
+-  Calculate (a) the **Total Number of Sales**, (b) the **Total Amount Sold** and (c) the **Average Sold** per country and per product with ``CSVParser`` class
+
+-  Write the results in a file in the Amazon S3 with  ``S3ControllerPutObject`` class
+
+
+-  Send a response message in the Outbox queue to the client with the name of the incoming file and the output file containing the result with ``sendMessages()`` from ``SQSSendMEssages`` Class
+
+
+
